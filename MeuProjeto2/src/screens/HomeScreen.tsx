@@ -18,7 +18,7 @@ const HomeScreen = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "https://jsonplaceholder.typicode.com/users"
+          "http://10.0.2.130:3000/users" //PRECISA SER O IP LOCAL DA MAQUINA NÃO PODE SER LOCALHOST
         );
         setUsers(response.data);
       } catch (error) {
